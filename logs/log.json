@@ -1,0 +1,18 @@
+{
+  "logId":1,
+  "desc":"just a test log",
+  "entries":{
+    "0":"The Null, the Emptiness, cái Không, cái Đạo, the unreachable, the inaccessible",
+    "1":{
+      "ts":[-1, -1],
+      "in":"The first log line which is devided into 3 parts: it's internal content, it's external references, it's timestamps. The fist ref is it's id (self ref); the second ref points to it's predecessor. The timestamps are init time & commit time, in miliseconds from UNIX epoch (1970/01/01 00:00:00 UTC).",
+      "ex":[1, 0]
+    },
+    "2":{
+      "ts":[-1, -1],
+      "in":"Refine the previous entry with 'fo' (form), defining the format/formula of the 'ex'. Test special chars: `, \", ', \\, /, *, +, -, &, ^, %, $, #, (, ), !, ~, tiếng Việt.",
+      "ex":[2, 1],
+      "fo":"#0 = self, #1 = source"
+    }
+  }
+}
