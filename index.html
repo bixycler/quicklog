@@ -3,7 +3,6 @@
   <title>Quicklog</title>
   <link rel="icon" href="img/uninet_symbol.png" type="image/png" size="400x368">
   <script src="https://cdn.jsdelivr.net/npm/markdown-it/dist/markdown-it.js"></script>
-  <script src="quicklog.js"></script>
   <style>
     .log-output{ border-style: groove; }
   </style>
@@ -12,10 +11,11 @@
 <BODY>
   <label id="timestamp" class="timestamp">0:0(:0) - 1:1(:1)</label><br/>
   <textarea id="logText" class="log-input" rows="10" cols="80" autofocus="autofocus"
-    oninput="updateMD(logText.value,logHtml)" placeholder="Log here ..." >
-  </textarea><br>
+    placeholder="Log here ..." ></textarea>
+  <br>
   <input type="text" id="blogEmail" class="blog-email-link" size="100" oninput="updateBloggerLink(blogEmail.value, blogEdit)"  placeholder="Paste Blogger emailing link here ..."></input>
   <div id="blogEdit" class="blog-edit-link"></div>
   <div id="logHtml" class="log-output"></div>
+  <script src="quicklog.js"></script>
 </BODY>
 </HTML>
