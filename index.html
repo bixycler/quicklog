@@ -12,7 +12,10 @@
 <BODY>
   <label id="timestamp" class="timestamp">0:0(:0) - 1:1(:1)</label><br/>
   <textarea id="logText" class="log-input" rows="10" cols="80" autofocus="autofocus"
-    oninput="updateMD(logText.value,logHtml)" placeholder="Log here ..." ></textarea>
+    oninput="updateMD(logText.value,logHtml)" placeholder="Log here ..." >
+  </textarea><br>
+  <input type="text" id="blogEmail" class="blog-email-link" size="100" oninput="updateBloggerLink(blogEmail.value, blogEdit)"  placeholder="Paste Blogger emailing link here ..."></input>
+  <div id="blogEdit" class="blog-edit-link"></div>
   <div id="logHtml" class="log-output"></div>
 </BODY>
 </HTML>
