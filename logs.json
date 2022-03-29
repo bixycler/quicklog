@@ -1,0 +1,8 @@
+{
+  "desc":"Metadata of logs",
+  "entry_minId":1,
+  "entry_maxId":1,
+  "logs":{
+    "1":"log.json"
+  }
+}
